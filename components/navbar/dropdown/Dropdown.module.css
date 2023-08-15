@@ -1,14 +1,17 @@
 .container {
     background-color: #1d2123;
-    height: 60px;
-    padding: 0 20px;
-}
-
-.list {
+    padding: 20px 0;
     color: #cacaca;
     font-size: 20px;
     line-height: 1.57;
-    height: 100%;
+}
+
+.containerClosed {
+    height: 0;
+}
+
+.containerOpen {
+    height: 100%
 }
 
 .item {
@@ -22,9 +25,4 @@
     height: 100%;
     display: flex;
     align-items: center;
-}
-
-.active {
-    background-color: #e7cd3b;
-    color: #000;
 }
