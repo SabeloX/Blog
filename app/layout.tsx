@@ -20,9 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={inter.className}
-        style={{
-          padding: "50px"
-        }}
       >
         <Navbar/>
         {children}

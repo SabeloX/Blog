@@ -12,7 +12,14 @@ export const Footer = () => {
             `}
         >
             <div
-                className={`flex gap-5  ${styles.subscribe}`}
+                className={`
+                    flex
+                    md:flex-row
+                    md:gap-10
+                    gap-20
+                    ${styles.subscribe}
+                    flex-col
+                `}
             >
                 <div
                     className="flex flex-col basis-1/2 gap-7"
