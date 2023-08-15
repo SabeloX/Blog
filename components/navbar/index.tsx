@@ -70,6 +70,10 @@ export const Navbar = () => {
                         >
                             <Link
                                 href={item.route}
+                                className={`
+                                    w-full
+                                    ${styles.link}
+                                `}
                             >
                                 {item.label}
                             </Link>

@@ -26,7 +26,7 @@ export const Footer = () => {
                 >
                     <Image
                         src="/logo.png"
-                        width={400}
+                        width={300}
                         height={100}
                         alt="logo"
                     />
