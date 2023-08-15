@@ -6,7 +6,7 @@ export const Footer = () => {
         <div
             className={`
                 container
-                rounded-xl
+                md:rounded-xl
                 ${styles.container}
                 mx-auto
             `}
@@ -65,7 +65,7 @@ export const Footer = () => {
                     items-center
                     flex
                     justify-center
-                    rounded-xl
+                    md:rounded-xl
                 `}
             >
                 <p>Copyrights © 2023. All Rights Reserved.</p>

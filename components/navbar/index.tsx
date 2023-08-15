@@ -37,7 +37,7 @@ export const Navbar = () => {
                 justify-between
                 items-center
                 gap-9
-                rounded-xl
+                md:rounded-xl
             `}
         >
             <button
