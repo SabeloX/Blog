@@ -28,46 +28,65 @@ export const Navbar = () => {
     const currentPath = usePathname();
     const isActive = (item: string) => currentPath === item
     return (
-        <ul
+        <div
             className={`
                 flex
                 container
                 mx-auto
                 ${styles.container} 
-                justify-center
+                justify-between
                 items-center
                 gap-9
                 rounded-xl
             `}
         >
-            {
-                navItems.map((item, index) => (
-                    <li
-                        key={index}
-                        className={`
-                        nav-item
-                        ${isActive(item.route) && styles.active}
-                        ${styles.item}
-                    `}
-                    >
-                        <Link
-                            href={item.route}
-                        >
-                            {item.label}
-                        </Link>
-                    </li>
-                ))
-            }
             <button
-                className={styles.search}
+                className={`${styles.search} md:hidden`}
             >
                 <Image
-                    src="icons/search.svg"
+                    src="/icons/hamburger.svg"
+                    width={30}
+                    height={30}
+                    alt="menu"
+                />
+            </button>
+            <ul
+                className={`
+                    md:flex
+                    hidden
+                    justify-center
+                    flex-1
+                    ${styles.list}
+                `}>
+                {
+                    navItems.map((item, index) => (
+                        <li
+                            key={index}
+                            className={`
+                                nav-item
+                                ${isActive(item.route) && styles.active}
+                                ${styles.item}
+                            `}
+                        >
+                            <Link
+                                href={item.route}
+                            >
+                                {item.label}
+                            </Link>
+                        </li>
+                    ))
+                }
+            </ul>
+            <button
+                className={`${styles.search} flex-none`}
+            >
+                <Image
+                    src="/icons/search.svg"
                     width={30}
                     height={30}
                     alt="search"
                 />
             </button>
-        </ul>
+        </div>
     )
 }

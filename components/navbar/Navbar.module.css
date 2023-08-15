@@ -1,16 +1,20 @@
 .container {
     background-color: #1d2123;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.list {
     color: #cacaca;
     font-size: 20px;
     line-height: 1.57;
-    height: 60px;
-    position: relative;
+    height: 100%;
 }
 
 .search {
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    padding-right: 20px;
+    padding-right: 20px; */
 }
 
 .item {
@@ -23,4 +27,11 @@
 .active {
     background-color: #e7cd3b;
     color: #000;
+}
+
+/* 
+    Responsive
+*/
+@media (max-width: 1024px) {
+
 }
